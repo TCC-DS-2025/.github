@@ -19,7 +19,7 @@
 O **LumiLivre** é um ecossistema completo desenvolvido para modernizar a administração de bibliotecas escolares e incentivar a leitura. Centralizamos processos manuais em uma plataforma unificada, conectando bibliotecários e estudantes de forma eficiente.
 
 - **WebSite**: Painel de controle para bibliotecários gerenciarem acervo, alunos e empréstimos. 
-- **Aplicativo**: Vitrine digital para alunos consultarem o catálogo e reservarem livros. 
+- **Application**: Vitrine digital para alunos consultarem o catálogo e reservarem livros. 
 - **API RestFull**: Cérebro da aplicação. Gerencia regras de negócio, segurança e dados.
 
 <br/>
@@ -39,10 +39,10 @@ flowchart TD
     classDef storage fill:#3ECF8E,stroke:#fff,stroke-width:2px,color:#fff;
     classDef external fill:#ddd,stroke:#333,stroke-width:1px,color:#000,stroke-dasharray: 5 5;
 
-    UserMobile["Aplicativo (Aluno)"]:::mobile
+    UserMobile["Application (Aluno)"]:::mobile
     UserWeb["WebSite (Bibliotecário)"]:::web
     
-    subgraph Cloud["Infraestrutura"]
+    subgraph Cloud["-"]
         direction TB
         API["API RestFull"]:::api
         DB[("PostgreSQL")]:::db
